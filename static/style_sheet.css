@@ -1,0 +1,53 @@
+/*Center the header and the text in it*/
+h1 {
+    color: #27d5ff;
+    text-align: center;
+}
+/*center and pad the body element*/
+body {
+    padding: 20px;
+    font-family: "Agency FB";
+    align-content: center;
+}
+/*highlight the word cookie*/
+.cookieWord {
+    color: cornflowerblue;
+    font-weight: bold;
+}
+/*format the cookie_type class, dynamic sizing?*/
+.cookie_type {
+    align-content: center;
+    text-align: center;
+    width: 80%;
+    margin: auto;
+    border: 1px solid black;
+}
+/*size the images*/
+.cookie_type img {
+    width: 50%;
+    /*border: 1px solid black;*/
+}
+
+/* style the 'about' link8*/
+.page-footer {
+    text-align: end;
+    padding-bottom: 50px;
+}
+/*style the class*/
+.order_now {
+    font-size: 500%;
+    text-align: center;
+    round-clip: true;
+}
+/*changes text color when clicked*/
+@keyframes flash {
+    from {color: cornflowerblue;}
+    to {color: magenta;}
+}
+
+/*//keep text consistent*/
+p {
+    font-family: "Agency FB";
+    text-align: center;
+    /*font-size: inherit;*/
+}

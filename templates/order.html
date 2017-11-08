@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Come again for your Cookies!</title>
+</head>
+<body>
+<br>
+<div class="top">
+    <div class="cookies">
+        <form method="POST" action="/save">
+            <h1 class = "cookies"> Your Favorite Cookies</h1>
+            <select id = 'cookies' name = "cookieNames">
+                {%  for cookie in cookieList %}
+                <option value="{{ cookie[0] }}" >{{ cookie[1] }} $ {{cookie[2] }}</option>
+                {% endfor %}
+            </select>
+            <br>
+
+
+            <button class="select" type="submit" >Add a cookie into the cart
+            </button>
+
+        </form>
+        </form>
+    </div>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Total</title>
+
+</head>
+<body>
+<div class="cart">
+    <h3>Your cookie Order</h3>
+    <table>
+        {%  for cookie in cartItems %}
+        <tr>
+            <td>{{ cookie[0] }}</td>
+            <td>{{ cookie[1] }}</td>
+            <td>
+                <form method="post" action="/save">
+
+                </form>
+
+            </td>
+        </tr>
+        {% endfor %}
+    </table>
+</div>
+<div class = "total">
+    $ {{ total }}
+</div>
+
+</body>
+</html>

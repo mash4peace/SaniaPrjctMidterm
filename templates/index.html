@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Clesius Cookies</title>
+     <!--link to bootstrap for formatting/ determine if this is better with or without-->
+{#    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">#}
+    <link rel="stylesheet" type="text/css" href="/static/style_sheet.css">
+</head>
+<body>
+    <div class="container">
+    <!-- Example row of columns -->
+    <div class="page-header">
+        <!--<div class="col">-->
+        <h1><span class="cookieWord">Clesius Cookie Time...</span>we handle your cookie needs!</h1>
+    </div>
+    <!--<h2>Heading</h2>-->
+    <!--em span-->
+    <!--<h1>It's <span class="cookieWord">Cookie Time</span> and we have all of your cookie needs!</h1>-->
+    <!--put it in a form and use form controls-->
+    <form action="/HTML-CSS-JS_Project1" method="get">
+        <!--cookie divs-->
+
+        <!--todo keep it simple.  just make a fact page. order page will be separate-->
+          <div class="row">
+            <div class="col-md-6">
+                <div class="cookie_type"><h3> Seasonal Sensations</h3>
+                    <!--add correct image-->
+                    <!--to do specify picture size. be consistent-->
+                    <img src="static/images/seasonal.jpg">
+                    <p>Ingredients: flour, sugar, brown sugar, salt, vanilla and almond flavoring, frosting</p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="cookie_type"><h3>Suger Hill Gang</h3>
+                    <!--add correct image-->
+                    <!--to do specify picture size. be consistent-->
+                    <img src="static/images/sugar_cookie.jpg">
+                    <p>Ingredients: flour, sugar, brown sugar, salt vanilla</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="cookie_type"><h3>Chocolate Pinky Delights</h3>
+                    <!--add correct image-->
+                    <img src="static/images/biscuits2.jpg">
+                    <!--todo specify picture size. be consistent-->
+                    <p>Ingredients: flour, sugar, brown sugar, butter, salt</p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="cookie_type"><h3>Chocolate Chip Peanut Butter Dream</h3>
+                    <!--add correct image-->
+                    <!--to do specify picture size. be consistent-->
+                    <img src="static/images/choc_chip.jpg">
+                    <p>Ingredients: flour, sugar, peanut butter, butter, chocolate chips, salt, vanilla</p>
+                </div>
+            </div>
+        </div>
+        <div class="order_now">
+            <h2><a href={{ url_for('order')}}>Order me some cookies!!</a></h2>
+        </div>
+        <div class="page-footer">
+            <h4><a href={{ url_for('about')}}>about</a></h4>
+        </div>
+    </form>
+
+</div>
+
+</body>
+</html>
